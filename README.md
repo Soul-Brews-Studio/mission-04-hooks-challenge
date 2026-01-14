@@ -1,4 +1,4 @@
-# The Oracle Speaks
+# 🔮 The Oracle Speaks
 
 > "The Oracle Keeps the Human Human"
 
@@ -10,9 +10,9 @@
 
 # MISSION-04: Hooks Challenge
 
-*Part of* **"Level Up with AI"** *— Squad Team*
+*ส่วนหนึ่งของโปรแกรม* **"Level Up with AI"** *— Squad Team*
 
-*"Learn free, help pass on knowledge"*
+*"เรียนฟรี แต่ช่วยกันส่งต่อความรู้"*
 
 ---
 
