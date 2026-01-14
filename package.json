@@ -1,0 +1,11 @@
+{
+  "name": "mission-04-hooks-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

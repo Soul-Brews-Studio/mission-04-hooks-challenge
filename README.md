@@ -202,14 +202,49 @@ Add to your `.claude/settings.json`:
 
 ---
 
+## Run Tests
+
+We provide automated tests using Bun. Run them to verify your implementation:
+
+```bash
+# Install bun if needed
+curl -fsSL https://bun.sh/install | bash
+
+# Run tests
+bun test
+
+# Watch mode (re-run on changes)
+bun test --watch
+```
+
+### Expected Output (When Passing)
+
+```
+bun test v1.x.x
+
+tests/safety-guardian.test.ts:
+✓ Safety Guardian Hook > should BLOCK dangerous commands > blocks rm -rf
+✓ Safety Guardian Hook > should BLOCK dangerous commands > blocks git push --force
+✓ Safety Guardian Hook > should BLOCK dangerous commands > blocks git reset --hard
+✓ Safety Guardian Hook > should BLOCK dangerous commands > blocks git push origin main
+✓ Safety Guardian Hook > should ALLOW safe commands > allows rm single file
+✓ Safety Guardian Hook > should ALLOW safe commands > allows git push to feature branch
+✓ Safety Guardian Hook > should show helpful messages > rm -rf suggests mv to trash
+
+ 14 pass
+ 0 fail
+```
+
+---
+
 ## Submission
 
 1. Fork this repo
 2. Implement the hook
-3. Test with the provided examples
+3. Run `bun test` and ensure all tests pass
 4. Create PR with:
    - Your hook implementation
-   - Screenshot of hook blocking dangerous command
+   - Screenshot of tests passing
    - Brief explanation of your approach
 
 ---
